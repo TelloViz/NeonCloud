@@ -172,10 +172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 259cfd0e194d42c4089a7750241863d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redRange: {x: 0, y: 0.25}
-  greenRange: {x: 0.5, y: 1}
-  blueRange: {x: 0.5, y: 0.75}
-  alphaRange: {x: 1, y: 1}
+  redRange: {x: 0, y: 0}
+  greenRange: {x: 0, y: 0}
+  blueRange: {x: 0.25, y: 0.5}
+  alphaRange: {x: 0, y: 0.5}
 --- !u!114 &8179644372806125956
 MonoBehaviour:
   m_ObjectHideFlags: 0
