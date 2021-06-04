@@ -44,7 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4bec00cc6e67a419cb72e916398642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  x: -0.5
+  y: 0
+  z: 0
 --- !u!1 &5708622919961276667
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,7 +130,7 @@ SpriteRenderer:
   m_Size: {x: 5.11, y: 4.23}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &5708622919961276664
@@ -143,7 +145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4bec00cc6e67a419cb72e916398642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -2
+  x: 1
+  y: 1
+  z: 1
 --- !u!65 &2446888683179995503
 BoxCollider:
   m_ObjectHideFlags: 0
