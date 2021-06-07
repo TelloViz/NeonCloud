@@ -422,10 +422,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1632327047647002954, guid: 02f8ee068d68d2d428dbfcf9848d4597, type: 3}
-      propertyPath: x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02f8ee068d68d2d428dbfcf9848d4597, type: 3}
 --- !u!1 &1703757069
@@ -1011,7 +1007,7 @@ GameObject:
   - component: {fileID: 3740670438769473367}
   - component: {fileID: 4470862855245523570}
   m_Layer: 0
-  m_Name: Offscreen Top Trigger Zone
+  m_Name: PlayerOffscreenTopTriggerZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1121,7 +1117,7 @@ GameObject:
   - component: {fileID: 6602591518397703822}
   - component: {fileID: 6215860171937643433}
   m_Layer: 0
-  m_Name: Offscreen Bottom Trigger Zone
+  m_Name: PlayerOffscreenBottomTriggerZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1257,7 +1253,6 @@ GameObject:
   - component: {fileID: 2069027965}
   - component: {fileID: 2069027964}
   - component: {fileID: 6969912993133474153}
-  - component: {fileID: 7879099318913002576}
   m_Layer: 0
   m_Name: Trigger - BG Color Panels
   m_TagString: Untagged
@@ -1265,19 +1260,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7879099318913002576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7879099318913002575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b12d94aa87f18714f84bb731b5fa6d52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offScreenEvent: {fileID: 11400000, guid: 5961f8ddbfdd5d344a914023fc6cecf6, type: 2}
 --- !u!65 &8641135010842282648
 BoxCollider:
   m_ObjectHideFlags: 0
