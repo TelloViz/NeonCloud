@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1632327047647002954}
   - component: {fileID: 8528557001710063960}
   - component: {fileID: 3303633208718231674}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Bowser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1064514121118827551}
   - component: {fileID: 1064514121118827548}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 2611125130091551137}
   - component: {fileID: 3520675380882172732}
   - component: {fileID: 8326588041240449390}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4561002987311105423, guid: 447aa8f5a1a36b0419d5466d0eb02eca, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4561002987311105426, guid: 447aa8f5a1a36b0419d5466d0eb02eca, type: 3}
       propertyPath: m_RootOrder
@@ -354,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4541957561830892629, guid: 82b961af85a5e1d44add46f9f0f3f90a, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4541957561830892634, guid: 82b961af85a5e1d44add46f9f0f3f90a, type: 3}
       propertyPath: m_RootOrder
@@ -370,7 +370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4541957561830892634, guid: 82b961af85a5e1d44add46f9f0f3f90a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4541957561830892634, guid: 82b961af85a5e1d44add46f9f0f3f90a, type: 3}
       propertyPath: m_LocalRotation.w
