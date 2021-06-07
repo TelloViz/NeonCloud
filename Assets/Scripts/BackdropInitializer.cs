@@ -4,8 +4,11 @@ using UnityEngine;
 
 
 public class BackdropInitializer : MonoBehaviour{
-    void Start(){
+    void Start() {
         var objectToColor = GetComponent<ColorManager>();
-        objectToColor.ChangeToRandomColorInRange();
+        if (objectToColor != null) {
+            objectToColor.ChangeToRandomColorInRange();
+        }
+        
     }
 }
