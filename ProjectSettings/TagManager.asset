@@ -5,17 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - Menu
+  - Background_Parallax
+  - Background_Panel
+  - Background
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Background
+  - Background_Panel
   - Water
   - UI
   - Player
   - Menu
-  - 
-  - 
+  - Background_Parallax
+  - Background
   - 
   - 
   - 

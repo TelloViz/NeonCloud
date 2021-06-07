@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476880606351354115}
   - component: {fileID: 1602529808314929351}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: BackgroundPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 4249062065064635971}
   - component: {fileID: 7869038905674682642}
   - component: {fileID: 8179644372806125956}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Backdrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}

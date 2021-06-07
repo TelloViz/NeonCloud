@@ -5,6 +5,6 @@ using UnityEngine;
 public class OffscreenGameEventTest : MonoBehaviour
 {
     public void Test(OffscreenGameEventData data){
-        Debug.Log("U DED");
+        Debug.Log(data.TagString + " " + data.OffScreenLocation);
     }
 }
