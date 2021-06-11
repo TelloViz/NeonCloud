@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: e3a104e0f050d7c44a4e1741bde6e3b4
+guid: 2f1df753d4600ee4095eb7c5316241a8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8817426130257391540
-    second: eyes_0
+      213: -5520866838458365020
+    second: PlantEnemies_0
   - first:
-      213: 3060230111996817670
-    second: eyes_1
+      213: 7260358877712054597
+    second: PlantEnemies_1
+  - first:
+      213: 1461206958268313027
+    second: PlantEnemies_2
+  - first:
+      213: -3619109996587529778
+    second: PlantEnemies_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,12 +103,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eyes_0
+      name: PlantEnemies_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 48
+        y: 0
+        width: 21
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -111,19 +117,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c40d2c8b6a532a580800000000000000
-      internalID: -8817426130257391540
+      spriteID: 4ab84797cd0f163b0800000000000000
+      internalID: -5520866838458365020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyes_1
+      name: PlantEnemies_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 21
         y: 0
-        width: 48
+        width: 21
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -132,8 +138,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6013684b21f187a20800000000000000
-      internalID: 3060230111996817670
+      spriteID: 54971e7aee9f1c460800000000000000
+      internalID: 7260358877712054597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlantEnemies_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd69ea9cff374410800000000000000
+      internalID: 1461206958268313027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlantEnemies_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9c55a02a656cdc0800000000000000
+      internalID: -3619109996587529778
       vertices: []
       indices: 
       edges: []
@@ -141,7 +189,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 51523a2e79c38104d99e470c32daf811
+    spriteID: 1ae3d02cb19bdb44d8dd696e9be8dbf0
     internalID: 0
     vertices: []
     indices: 
@@ -150,7 +198,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

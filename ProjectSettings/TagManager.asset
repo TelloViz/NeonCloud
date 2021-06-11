@@ -8,6 +8,8 @@ TagManager:
   - Background_Parallax
   - Background_Panel
   - Background
+  - Obstacle
+  - Camera_Obstacle
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Menu
   - Background_Parallax
   - Background
-  - 
+  - Obstacle
   - 
   - 
   - 
