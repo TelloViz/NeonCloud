@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5168715475043127847}
   - component: {fileID: 3030821888533973741}
-  - component: {fileID: 8200447014122927786}
-  - component: {fileID: 3402677532486774669}
   - component: {fileID: 3780557644436300178}
-  m_Layer: 0
+  - component: {fileID: -7947848301689956198}
+  m_Layer: 9
   m_Name: Back Clouds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,38 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4bec00cc6e67a419cb72e916398642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: -0.5
+  x: -0.52
   y: 0
   z: 0
---- !u!54 &8200447014122927786
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685025859656408963}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 120
-  m_CollisionDetection: 0
---- !u!65 &3402677532486774669
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685025859656408963}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0.5, y: 0.5, z: 0}
 --- !u!212 &3780557644436300178
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -130,3 +100,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-7947848301689956198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685025859656408963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9259c077c696a8f4486cb8d0591d3c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetFromTarget: {fileID: 4375186527221499648, guid: d8ed808fd0a8c7342becd6f206ede022, type: 3}
+  resetToTarget: {fileID: 439450782850431573, guid: bf336dbf2b4c8ba41b241a689a95ade3, type: 3}
