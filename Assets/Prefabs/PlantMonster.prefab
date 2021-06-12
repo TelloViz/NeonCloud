@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 7045151669632921413}
   - component: {fileID: -90697761742184212}
   - component: {fileID: 2682011392988802048}
+  - component: {fileID: 6388705032542233011}
   m_Layer: 10
-  m_Name: PlantObstacle
+  m_Name: PlantMonster
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +64,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
@@ -163,3 +164,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc4975c36a611c439435a6db5e59b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6388705032542233011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6356427340053251468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe070579ec24b274e9418d7190d3b1df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 0, y: 0}
+  startingPos: {x: 0, y: 0}
