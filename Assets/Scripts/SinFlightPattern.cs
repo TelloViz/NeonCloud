@@ -10,10 +10,10 @@ namespace FlightPattern {
         
 
 
-        public override void IncrementRigidbody(Rigidbody rb, Vector3 sinData, float dt) {
+        public override void IncrementRigidbody(Rigidbody rb, Vector3 sinData, Vector3 startPos, float dt) {
             float magnitude = sinData.y;
             float period = sinData.z;
-            Vector3 mov = new Vector3(rb.position.x + sinData.x * dt, magnitude * Mathf.Sin(rb.position.x / period) * dt, rb.position.z);
+            Vector3 mov = new Vector3(rb.position.x + sinData.x * dt,startPos.y + magnitude * Mathf.Sin(rb.position.x / period), rb.position.z);
             rb.position = mov;
 
         }

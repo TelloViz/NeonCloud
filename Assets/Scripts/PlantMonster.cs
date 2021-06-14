@@ -32,7 +32,7 @@ public class PlantMonster : MonoBehaviour, IFlightPatternable {
     public void NextPosition() {
         if (rb != null) {
 
-            this.flightPattern.IncrementRigidbody(rb, velocity, frameTime);
+            this.flightPattern.IncrementRigidbody(rb, velocity, startingPos, frameTime);
         }
     }
     #endregion
