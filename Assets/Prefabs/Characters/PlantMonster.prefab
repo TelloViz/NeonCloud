@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -2678977257971223301}
   - component: {fileID: 7045151669632921413}
   - component: {fileID: -90697761742184212}
-  - component: {fileID: 6388705032542233011}
+  - component: {fileID: -3620276645736233876}
   m_Layer: 10
   m_Name: PlantMonster
   m_TagString: Obstacle
@@ -135,7 +135,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6388705032542233011
+--- !u!114 &-3620276645736233876
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,7 +147,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe070579ec24b274e9418d7190d3b1df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: -20, y: 0}
-  magnitude: 1
-  period: 1
-  startingPos: {x: 11, y: 2.5, z: -3}
+  flightPattern: {fileID: 11400000, guid: 0862a9a01ffc3004ababe08e70fb3c56, type: 2}
+  xVelocity: -5
