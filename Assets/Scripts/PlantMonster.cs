@@ -5,9 +5,6 @@ using FlightPattern;
 public class PlantMonster : MonoBehaviour, IFlightPatternable {
 
     private Rigidbody rb;
-    [SerializeField] private float xVelocity;
-    [SerializeField] private float magnitude;
-    [SerializeField] private float period;
 
     [SerializeField] private Vector3 startingPos;
 
@@ -19,7 +16,6 @@ public class PlantMonster : MonoBehaviour, IFlightPatternable {
     void Start() {
         rb = this.GetComponent<Rigidbody>();
         rb.position = startingPos;
-        velocity = new Vector3(xVelocity, magnitude, period);
     }
 
     void FixedUpdate() {
@@ -32,7 +28,7 @@ public class PlantMonster : MonoBehaviour, IFlightPatternable {
     public void NextPosition() {
         if (rb != null) {
 
-            this.flightPattern.IncrementRigidbody(rb, velocity, startingPos, frameTime);
+            this.flightPattern.IncrementRigidbody(rb, startingPos, frameTime);
         }
     }
     #endregion

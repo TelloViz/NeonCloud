@@ -6,7 +6,7 @@ namespace FlightPattern {
 
     public class PlantMonsterFlightPattern : BaseFlightPattern
 {
-        public override void IncrementRigidbody(Rigidbody rb,Vector3 velocity, Vector3 startPos, float dt) { }
+        public override void IncrementRigidbody(Rigidbody rb, Vector3 startPos, float dt) { }
 }
 
 
