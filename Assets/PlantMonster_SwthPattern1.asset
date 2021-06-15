@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2615e51c0f41d62489d8c5f7e2e3d193, type: 3}
-  m_Name: PlantMonster_SinePattern2
+  m_Script: {fileID: 11500000, guid: 360bb349a5978f945bcd908d1610ee8e, type: 3}
+  m_Name: PlantMonster_SwthPattern1
   m_EditorClassIdentifier: 
-  xVelocity: -2
-  magnitude: 2
-  period: 0.75
+  xVelocity: 0
+  magnitude: 0
+  period: 0
