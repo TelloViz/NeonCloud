@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xVelocity: -3
   magnitude: 1
-  period: 0.5
+  period: 3
