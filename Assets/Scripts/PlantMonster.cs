@@ -2,7 +2,7 @@ using UnityEngine;
 using FlightPattern;
 
 
-public class PlantMonster : MonoBehaviour, IFlightPatternable {
+public class PlantMonster : MonoBehaviour {
 
     private Rigidbody rb;
 
@@ -20,14 +20,8 @@ public class PlantMonster : MonoBehaviour, IFlightPatternable {
 
     void FixedUpdate() {
         frameTime = Time.deltaTime;
-        NextPosition();
-    }
-    #endregion
-
-    #region Interface Method
-    public void NextPosition() {
-        if (rb != null) {
-
+        if (rb != null)
+        {
             this.flightPattern.IncrementRigidbody(rb, startingPos, frameTime);
         }
     }
