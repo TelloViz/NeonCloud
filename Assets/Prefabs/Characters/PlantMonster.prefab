@@ -9,14 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1543895371351130485}
-  - component: {fileID: 2645961195029905431}
   - component: {fileID: -4933904554765710398}
   - component: {fileID: -2678977257971223301}
   - component: {fileID: 7045151669632921413}
   - component: {fileID: -90697761742184212}
-  - component: {fileID: 2682011392988802048}
+  - component: {fileID: -3620276645736233876}
   m_Layer: 10
-  m_Name: PlantObstacle
+  m_Name: PlantMonster
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,21 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2645961195029905431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6356427340053251468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe4bec00cc6e67a419cb72e916398642, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: -1
-  y: 0
-  z: 0
 --- !u!54 &-4933904554765710398
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -63,7 +47,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
@@ -151,7 +135,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2682011392988802048
+--- !u!114 &-3620276645736233876
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,6 +144,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6356427340053251468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dc4975c36a611c439435a6db5e59b01, type: 3}
+  m_Script: {fileID: 11500000, guid: fe070579ec24b274e9418d7190d3b1df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flightPattern: {fileID: 11400000, guid: 0862a9a01ffc3004ababe08e70fb3c56, type: 2}
+  xVelocity: -5

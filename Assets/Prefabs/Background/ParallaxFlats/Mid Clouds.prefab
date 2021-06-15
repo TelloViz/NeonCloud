@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 6112332376504853633}
   - component: {fileID: 8153566609116366108}
   - component: {fileID: 8047762360374317222}
-  - component: {fileID: 2914744853831297493}
-  - component: {fileID: 5278534404509763879}
-  m_Layer: 0
+  - component: {fileID: 6176916508293604298}
+  m_Layer: 9
   m_Name: Mid Clouds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4bec00cc6e67a419cb72e916398642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: -3.5
+  x: -1.56
   y: 0
   z: 0
 --- !u!212 &8047762360374317222
@@ -101,32 +100,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!54 &2914744853831297493
-Rigidbody:
+--- !u!114 &6176916508293604298
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8926933557967383503}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 120
-  m_CollisionDetection: 0
---- !u!65 &5278534404509763879
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8926933557967383503}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0.5, y: 0.5, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9259c077c696a8f4486cb8d0591d3c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetFromTarget: {fileID: 4375186527221499648, guid: d8ed808fd0a8c7342becd6f206ede022, type: 3}
+  resetToTarget: {fileID: 439450782850431573, guid: bf336dbf2b4c8ba41b241a689a95ade3, type: 3}
