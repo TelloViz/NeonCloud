@@ -342,11 +342,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4261004889234001436, guid: 3fb3876c50157624190d7bf4a6291994, type: 3}
       propertyPath: gravForce.y
-      value: -3
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4261004889234001436, guid: 3fb3876c50157624190d7bf4a6291994, type: 3}
       propertyPath: liftForce.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4261004889234001436, guid: 3fb3876c50157624190d7bf4a6291994, type: 3}
       propertyPath: grav_velocity.y
@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxUpVelocity: 6
-  maxDownVelocity: -5
+  maxDownVelocity: -4
   maxLeftVelocity: 0
   maxRightVelocity: 0
 --- !u!1 &1740488757
