@@ -5,22 +5,39 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
 
+[RequireComponent(typeof(Rigidbody))]
+
 public class PlayerCharacter : MonoBehaviour{
 
     private float y_velocity = 0;
-    [SerializeField] private float lift_velocity = 0f;
-    [SerializeField] private float grav_velocity = 0f;
+    [SerializeField] private Vector3 liftForce;
+    [SerializeField] private Vector3 gravForce;
+    private Rigidbody rb;
+
+    private bool isLifting;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     public void OnLift(InputAction.CallbackContext context){
         if (context.started == true){
-            y_velocity = lift_velocity;
+            isLifting = true;
         }
         else if (context.canceled == true){
-            y_velocity = grav_velocity;
+            isLifting = false;
         }
     }
 
     void FixedUpdate(){
-        this.transform.Translate(0, y_velocity * Time.deltaTime, 0);
+        if (isLifting == true)
+        {
+            rb.AddForce(liftForce);
+        }
+        else if (isLifting == false)
+        {
+            rb.AddForce(gravForce);
+        }
     }
 }

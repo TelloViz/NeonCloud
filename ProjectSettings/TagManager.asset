@@ -47,3 +47,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackClouds
+    uniqueID: 426671881
+    locked: 0
+  - name: BackMountain
+    uniqueID: 4250465697
+    locked: 0
+  - name: MidCloud
+    uniqueID: 1336170585
+    locked: 0
+  - name: ForeMountain
+    uniqueID: 3034524429
+    locked: 0
+  - name: ForeCloud
+    uniqueID: 3185842389
+    locked: 0
