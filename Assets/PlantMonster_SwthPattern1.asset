@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PlantMonster_SwthPattern1
   m_EditorClassIdentifier: 
   xVelocity: -1
-  magnitude: 2
-  period: 3
+  magnitude: 3
+  period: 1
