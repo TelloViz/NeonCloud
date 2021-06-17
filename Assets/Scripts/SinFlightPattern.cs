@@ -17,6 +17,7 @@ namespace FlightPattern {
             newPos.x = rb.position.x + xVelocity * dt;
             newPos.y = startPos.y + magnitude * Mathf.Sin(rb.position.x / period);
             newPos.z = rb.position.z;
+
             rb.position = newPos;
         }
 

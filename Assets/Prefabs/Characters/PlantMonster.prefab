@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe070579ec24b274e9418d7190d3b1df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingPos: {x: 0, y: 0, z: 0}
-  flightPattern: {fileID: 11400000, guid: 0862a9a01ffc3004ababe08e70fb3c56, type: 2}
+  startingPos: {x: 5, y: 0, z: 0}
+  flightPattern: {fileID: 11400000, guid: 00b7bd7488e79234ba4159e70c20849f, type: 2}
 --- !u!114 &-7780970018746316147
 MonoBehaviour:
   m_ObjectHideFlags: 0

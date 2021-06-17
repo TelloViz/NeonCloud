@@ -15,15 +15,18 @@ public class PlayerCharacter : MonoBehaviour{
     private Rigidbody rb;
 
     private bool isLifting;
+    private bool hasBegun = false;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.velocity = new Vector3(0, 0, 0);
     }
 
     public void OnLift(InputAction.CallbackContext context){
         if (context.started == true){
             isLifting = true;
+            hasBegun = true;
         }
         else if (context.canceled == true){
             isLifting = false;
@@ -37,7 +40,10 @@ public class PlayerCharacter : MonoBehaviour{
         }
         else if (isLifting == false)
         {
-            rb.AddForce(gravForce);
+            if (hasBegun == true)
+            {
+                rb.AddForce(gravForce);
+            }
         }
     }
 }

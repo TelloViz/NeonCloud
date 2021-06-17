@@ -9,7 +9,9 @@ public class PlantMonster : MonoBehaviour {
     [SerializeField] private Vector3 startingPos;
 
     private Vector3 velocity;
+
     [SerializeField] private PlantMonsterFlightPattern flightPattern;
+
     private float frameTime;
 
     #region Mono Behaviour
@@ -22,7 +24,7 @@ public class PlantMonster : MonoBehaviour {
         frameTime = Time.deltaTime;
         if (rb != null)
         {
-            this.flightPattern.IncrementRigidbody(rb, startingPos, frameTime);
+            flightPattern.IncrementRigidbody(rb, startingPos, frameTime);
         }
     }
     #endregion
