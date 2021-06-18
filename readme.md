@@ -4,7 +4,7 @@
 
 
 # Legal Notice:
->Some used in the development phase of this game is under copyright by other owners. 
+>Some assets used in the development phase of this game is under copyright by other owners. 
 >I do not make money from these temporary assets. 
 >I will not make money from these temporary assets. 
 >All assets will be replaced with original artwork throughout the process of this games development. 
