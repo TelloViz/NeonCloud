@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: -2882886463878485169}
   - component: {fileID: 4261004889234001436}
   - component: {fileID: 1543437717}
+  - component: {fileID: 8314652106486482637}
+  - component: {fileID: 1543437718}
   m_Layer: 6
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -213,3 +215,35 @@ MonoBehaviour:
   maxDownVelocity: -4
   maxLeftVelocity: 0
   maxRightVelocity: 0
+--- !u!114 &8314652106486482637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9078788527796455315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a10f4da909ee4419f92f9256c14250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxUpVelocity: 3
+  maxDownVelocity: -2
+  maxLeftVelocity: 0
+  maxRightVelocity: 0
+--- !u!114 &1543437718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9078788527796455315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c683767d48801874fbff0f433c71e606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxUpAngle: 45
+  maxDownAngle: 45
+  maxUpVeloc: 3
+  maxDownVeloc: -2
