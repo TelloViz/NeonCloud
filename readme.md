@@ -1,7 +1,12 @@
-# Flappy Koopa
+# Neon Cloud
 
-## A helicopter / flappy bird -esque clone made in Unity Engine
+## Arcade runner where you soar through the skies.
 
-# Important Note:
 
-``` Some artwork used in this game are not owned by myself. I am simply using said artwork in order to make this game for practice. This game is not for sale. The art is not for sale. I have edited some of the art, such as the background to allow for parallaxing. If you use these files, please know that they are copyrighted by Nintendo. Nintendo assets used include, but are not limited to: Sprite backgrounds from Super Mario World, Super Koopa Character Sprite from SMW, etc. I do not and will not make money off of this repository and ask that you do not use this repo for financial gain. ```
+# Legal Notice:
+>Some used in the development phase of this game is under copyright by other owners. 
+>I do not make money from these temporary assets. 
+>I will not make money from these temporary assets. 
+>All assets will be replaced with original artwork throughout the process of this games development. 
+>Nintendo is the owner of any Super Mario World sprite assets being used temporarily in this game.
+>This project is not affiliated with Nintendo in any way.
