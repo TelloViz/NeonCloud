@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1759695288}
   - component: {fileID: -2882886463878485169}
   - component: {fileID: 4261004889234001436}
+  - component: {fileID: 1543437717}
   m_Layer: 6
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -74,12 +75,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 188737137
+  m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 728549698991991917, guid: 75df4f83640a7df4590d5ed8735e756b, type: 3}
+  m_Sprite: {fileID: 2011148319957810942, guid: 43833f2b3e021d042863ec1650014600, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.23, y: 0.14}
@@ -98,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 9078788527796455315}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0d1b96a757c91554ebda339266d2a1e8, type: 2}
+  m_Controller: {fileID: 9100000, guid: 27f43dd47fe9e64478f430b7bafd88e4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -194,5 +195,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2582eda14237d54995b7d37d1a0cbc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lift_velocity: 2
-  grav_velocity: -3
+  liftForce: {x: 0, y: 3, z: 0}
+  gravForce: {x: 0, y: -2, z: 0}
+--- !u!114 &1543437717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9078788527796455315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a10f4da909ee4419f92f9256c14250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxUpVelocity: 6
+  maxDownVelocity: -4
+  maxLeftVelocity: 0
+  maxRightVelocity: 0
