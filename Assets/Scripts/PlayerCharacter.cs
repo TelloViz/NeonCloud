@@ -1,9 +1,6 @@
  
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Interactions;
 
 [RequireComponent(typeof(Rigidbody))]
 
@@ -14,6 +11,11 @@ public class PlayerCharacter : MonoBehaviour{
     [SerializeField] private Vector3 gravForce;
     private Rigidbody rb;
 
+    [SerializeField] private Sprite sprite1;
+    [SerializeField] private Sprite sprite2;
+
+    private SpriteRenderer spriteRend;
+
     private bool isLifting;
     private bool hasBegun = false;
 
@@ -21,6 +23,9 @@ public class PlayerCharacter : MonoBehaviour{
     {
         rb = GetComponent<Rigidbody>();
         rb.velocity = new Vector3(0, 0, 0);
+
+        spriteRend = GetComponent<SpriteRenderer>();
+        spriteRend.sprite = sprite1;
     }
 
     public void OnLift(InputAction.CallbackContext context){
@@ -31,6 +36,11 @@ public class PlayerCharacter : MonoBehaviour{
         else if (context.canceled == true){
             isLifting = false;
         }
+    }
+
+    public void OnGlide(InputAction.CallbackContext context)
+    {
+
     }
 
     void FixedUpdate(){
@@ -44,6 +54,15 @@ public class PlayerCharacter : MonoBehaviour{
             {
                 rb.AddForce(gravForce);
             }
+        }
+
+        if(rb.velocity .y > 0)
+        {
+            spriteRend.sprite = sprite1;
+        }
+        else
+        {
+            spriteRend.sprite = sprite2;
         }
     }
 }
