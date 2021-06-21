@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 021cd2defccffd343874814be421a2b2, type: 3}
-  m_Name: DefaultSurfPositions
+  m_Script: {fileID: 11500000, guid: 3a2eea2f47e20144d9c466b76f940879, type: 3}
+  m_Name: RearGravVelocLimit
   m_EditorClassIdentifier: 
-  rear: {x: -0.1, y: 0}
-  mid: {x: 0.12, y: 0}
-  forward: {x: 0.35, y: 0}
+  maxVelocity: {x: 0, y: -2, z: 0}

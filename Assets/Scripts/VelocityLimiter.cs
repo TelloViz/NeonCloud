@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VelocLimit;
 
 [RequireComponent(typeof(Rigidbody))]
 
 public class VelocityLimiter : MonoBehaviour
 {
 
-    [SerializeField] private float maxUpVelocity, maxDownVelocity, maxLeftVelocity, maxRightVelocity;
+    private float liftVelocityLimit;
+    private float gravVelocityLimit;
 
     private Rigidbody rb;
+
+    public float LiftVelocityLimit { get => liftVelocityLimit; set => liftVelocityLimit = value; }
+    public float GravVelocityLimit { get => gravVelocityLimit; set => gravVelocityLimit = value; }
+
 
 
     // Start is called before the first frame update
@@ -22,21 +28,13 @@ public class VelocityLimiter : MonoBehaviour
     void Update()
     {
         Vector3 veloc = rb.velocity;
-        if(rb.velocity.x > maxRightVelocity)
+       if (rb.velocity.y > LiftVelocityLimit)
         {
-            veloc.x = maxRightVelocity;
+            veloc.y = LiftVelocityLimit;
         }
-        if(rb.velocity.x < maxLeftVelocity)
+        if (rb.velocity.y < GravVelocityLimit)
         {
-            veloc.x = maxLeftVelocity;
-        }
-        if (rb.velocity.y > maxUpVelocity)
-        {
-            veloc.y = maxUpVelocity;
-        }
-        if (rb.velocity.y < maxDownVelocity)
-        {
-            veloc.y = maxDownVelocity;
+            veloc.y = GravVelocityLimit;
         }
 
         rb.velocity = veloc;

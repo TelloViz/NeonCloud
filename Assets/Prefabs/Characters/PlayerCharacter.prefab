@@ -10,14 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9078788527796455318}
   - component: {fileID: 9078788527796455313}
-  - component: {fileID: 9078788527796455312}
-  - component: {fileID: 9099457670660512579}
-  - component: {fileID: 1759695288}
-  - component: {fileID: -2882886463878485169}
-  - component: {fileID: 4261004889234001436}
-  - component: {fileID: 1543437717}
-  - component: {fileID: 8314652106486482637}
-  - component: {fileID: 1543437718}
   m_Layer: 6
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -34,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 9078788527796455315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.75, y: 0, z: -3}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -78,172 +70,16 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 188737137
-  m_SortingLayer: -1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 2011148319957810942, guid: 43833f2b3e021d042863ec1650014600, type: 3}
+  m_SortingLayer: 6
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.23, y: 0.14}
+  m_Size: {x: 0.46, y: 0.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &9078788527796455312
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9078788527796455315}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 27f43dd47fe9e64478f430b7bafd88e4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!54 &9099457670660512579
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9078788527796455315}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 120
-  m_CollisionDetection: 0
---- !u!65 &1759695288
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9078788527796455315}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.07, y: 0.09, z: 0.16}
-  m_Center: {x: 0.08, y: 0.004, z: 0}
---- !u!114 &-2882886463878485169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9078788527796455315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 5bb945035309c1542a669808b9ef15f0, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4261004889234001436}
-        m_TargetAssemblyTypeName: PlayerScript, Assembly-CSharp
-        m_MethodName: OnLift
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: OnLift
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 3de3c4cd-a942-4b5a-95fe-8bf059a1eac8
-    m_ActionName: Play Mode/Lift[/Keyboard/space]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Play Mode
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
---- !u!114 &4261004889234001436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9078788527796455315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2582eda14237d54995b7d37d1a0cbc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  liftForce: {x: 0, y: 3, z: 0}
-  gravForce: {x: 0, y: -2, z: 0}
---- !u!114 &1543437717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9078788527796455315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a10f4da909ee4419f92f9256c14250, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxUpVelocity: 6
-  maxDownVelocity: -4
-  maxLeftVelocity: 0
-  maxRightVelocity: 0
---- !u!114 &8314652106486482637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9078788527796455315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a10f4da909ee4419f92f9256c14250, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxUpVelocity: 3
-  maxDownVelocity: -2
-  maxLeftVelocity: 0
-  maxRightVelocity: 0
---- !u!114 &1543437718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9078788527796455315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c683767d48801874fbff0f433c71e606, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxUpAngle: 45
-  maxDownAngle: 45
-  maxUpVeloc: 3
-  maxDownVeloc: -2

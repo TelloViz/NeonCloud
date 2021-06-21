@@ -10,6 +10,8 @@ TagManager:
   - Background
   - Obstacle
   - Camera_Obstacle
+  - SurfBoard
+  - PlayerCharacter
   layers:
   - Default
   - TransparentFX
