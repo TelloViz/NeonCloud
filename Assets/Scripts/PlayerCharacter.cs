@@ -56,8 +56,6 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private Sprite surferSprite2;
     [SerializeField] private Sprite boardSprite;
 
-    private SpriteRenderer[] spriteRenderers;
-
 
 
     private Transform surfboardTrans;
@@ -186,6 +184,7 @@ public class PlayerCharacter : MonoBehaviour
         if (isGliding == true)
         {
             rb.velocity = Vector3.zero;
+            rb.MoveRotation(Quaternion.Euler(0f, 0f, 0f));
         }
         else if (isLifting == true)
         {
