@@ -4,9 +4,9 @@ using UnityEngine;
 namespace FlightPattern {
 
 
-public abstract class BaseFlightPattern : ScriptableObject
+public abstract class BaseFlightPattern : MonoBehaviour
 {
-        public abstract void IncrementRigidbody(Rigidbody rb, Vector3 startPos, float dt);
+        public abstract void IncrementRigidbody(FlightData fd, Rigidbody rb, float dt);
 }
 
 

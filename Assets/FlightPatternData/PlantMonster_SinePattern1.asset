@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2615e51c0f41d62489d8c5f7e2e3d193, type: 3}
   m_Name: PlantMonster_SinePattern1
   m_EditorClassIdentifier: 
-  xVelocity: -3
-  magnitude: 1
-  period: 0.5
+  xVelocity: -1.07
+  magnitude: 0.28
+  period: 0.12

@@ -3,15 +3,12 @@ using System.Collections;
 
 namespace FlightPattern {
 
-    [CreateAssetMenu(fileName = "New Flight Pattern (PlantMonsterFlightPatternSin)", menuName = "Flight Pattern/New Flight Pattern (PlantMonsterFlightPatternSin)")]
 
-    public class SinFlightPattern : PlantMonsterFlightPattern
+    public class SinFlightPattern : BaseFlightPattern
     {
-        [SerializeField] private float xVelocity;
-        [SerializeField] private float magnitude;
-        [SerializeField] private float period;
+        [SerializeField] private FlightData fd;
 
-        public override void IncrementRigidbody(Rigidbody rb, Vector3 startPos, float dt) {
+        public override void IncrementRigidbody(FlightData fd) {
 
             Vector3 newPos;
             newPos.x = rb.position.x + xVelocity * dt;
