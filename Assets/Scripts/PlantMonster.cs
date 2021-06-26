@@ -19,10 +19,9 @@ public class PlantMonster : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        frameTime = Time.deltaTime;
-        if (rb != null && fp != null)
-        {
-           fp.IncrementRigidbody(rb, startingPos, frameTime);
+       
+        if (rb != null && fp != null) {
+           fp.IncrementRigidbody(rb, startingPos, Time.deltaTime);
         }
     }
     #endregion
