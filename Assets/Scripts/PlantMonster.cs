@@ -2,15 +2,13 @@ using UnityEngine;
 using FlightPattern;
 
 
+[RequireComponent(typeof(Rigidbody), typeof(BaseFlightPattern))]
 public class PlantMonster : MonoBehaviour {
 
     private Rigidbody rb;
-
     [SerializeField] private Vector3 startingPos;
+    [SerializeField] BaseFlightPattern fp;
 
-    private Vector3 velocity;
-
-    [SerializeField] private PlantMonsterFlightPattern flightPattern;
 
     private float frameTime;
 
@@ -22,9 +20,9 @@ public class PlantMonster : MonoBehaviour {
 
     void FixedUpdate() {
         frameTime = Time.deltaTime;
-        if (rb != null)
+        if (rb != null && fp != null)
         {
-            flightPattern.IncrementRigidbody(rb, startingPos, frameTime);
+           fp.IncrementRigidbody(rb, startingPos, frameTime);
         }
     }
     #endregion

@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace FlightPattern {
 
-
-public abstract class BaseFlightPattern : MonoBehaviour
+    [RequireComponent(typeof(Rigidbody))]
+    public abstract class BaseFlightPattern : MonoBehaviour, IFlightPatternable
 {
-        public abstract void IncrementRigidbody(FlightData fd, Rigidbody rb, float dt);
+        public abstract void IncrementRigidbody(Rigidbody rb, Vector3 startPos, float dt);
 }
 
 

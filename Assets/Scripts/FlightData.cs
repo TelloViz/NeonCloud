@@ -11,5 +11,10 @@ namespace FlightPattern
         [SerializeField] private float xVelocity;
         [SerializeField] private float magnitude;
         [SerializeField] private float period;
+
+        public float XVelocity { get => xVelocity; set => xVelocity = value; }
+        public float Magnitude { get => magnitude; set => magnitude = value; }
+        public float Period { get => period; set => period = value; }
+        
     }
 }
