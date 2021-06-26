@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d9f536c1f276df419789294c8a08934, type: 3}
-  m_Name: SinWave1Data
+  m_Name: TrigFlightData2
   m_EditorClassIdentifier: 
-  xVelocity: -1.19
+  xVelocity: -2
   magnitude: 1
-  period: 1
+  period: 0.25
