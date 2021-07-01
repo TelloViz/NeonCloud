@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Debug
+namespace Tello.Debug
 {
     public class PlantOffscreenDebugPrinter : MonoBehaviour
     {
         public void PrintPlantOffscreen(OffscreenGameEventData data)
         {
-            Debug.Log("Plant Offscreen, " + data.TagString);
+            UnityEngine.Debug.Log("Plant Offscreen, " + data.TagString);
         }
     }
 }

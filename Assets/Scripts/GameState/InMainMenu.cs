@@ -1,5 +1,6 @@
 ﻿using Vast.StateMachine;
 using UnityEngine;
+using System.Collections;
 
 namespace GameState
 {
@@ -10,7 +11,7 @@ namespace GameState
         public InMainMenu(string name = DEFAULT_NAME)
         {
             Name = name;
-            Debug.Log(name + " state created...");
+            UnityEngine.Debug.Log(name + " state created...");
         }
 
         public override void OnEnter() { }
