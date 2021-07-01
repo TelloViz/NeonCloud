@@ -14,7 +14,13 @@ namespace GameState
             UnityEngine.Debug.Log(name + " state created...");
         }
 
-        public override void OnEnter() { Debug.Log("Entered " + this.Name + " state..."); }
+        public override void OnEnter() 
+        { 
+            Debug.Log("Entered " + this.Name + " state..."); 
+
+
+
+        }
 
         public override void OnExit() { }
 
