@@ -33,17 +33,17 @@ public class PlayerCharacter : MonoBehaviour
     private VelocLimit.VelocityLimit currentMaxGrav;
 
 
-    [SerializeField] private AngleLimit.AngleLimit rearMaxLiftAngle;
-    [SerializeField] private AngleLimit.AngleLimit rearMaxGravAngle;
+    [SerializeField] private VelocLimit.AngleLimit rearMaxLiftAngle;
+    [SerializeField] private VelocLimit.AngleLimit rearMaxGravAngle;
 
-    [SerializeField] private AngleLimit.AngleLimit midMaxLiftAngle;
-    [SerializeField] private AngleLimit.AngleLimit midMaxGravAngle;
+    [SerializeField] private VelocLimit.AngleLimit midMaxLiftAngle;
+    [SerializeField] private VelocLimit.AngleLimit midMaxGravAngle;
 
-    [SerializeField] private AngleLimit.AngleLimit forwardMaxLiftAngle;
-    [SerializeField] private AngleLimit.AngleLimit forwardMaxGravAngle;
+    [SerializeField] private VelocLimit.AngleLimit forwardMaxLiftAngle;
+    [SerializeField] private VelocLimit.AngleLimit forwardMaxGravAngle;
 
-    private AngleLimit.AngleLimit currentMaxLiftAngle;
-    private AngleLimit.AngleLimit currentMaxGravAngle;
+    private VelocLimit.AngleLimit currentMaxLiftAngle;
+    private VelocLimit.AngleLimit currentMaxGravAngle;
 
 
 

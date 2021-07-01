@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-namespace AngleLimit
+namespace VelocLimit
 {
 
 
