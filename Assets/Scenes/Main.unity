@@ -663,7 +663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &680028038
 Transform:
   m_ObjectHideFlags: 0
@@ -693,7 +693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &687931483
 Transform:
   m_ObjectHideFlags: 0
@@ -943,7 +943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1761954049
 Transform:
   m_ObjectHideFlags: 0
@@ -982,7 +982,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850402772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5380616, y: -1.0468372, z: 5.0179944}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1314,6 +1314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera - Player
       objectReference: {fileID: 0}
+    - target: {fileID: 108880869841583371, guid: 8bd92ca296c5d1244a15cbed5607d350, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 108880869841583372, guid: 8bd92ca296c5d1244a15cbed5607d350, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1370,6 +1374,10 @@ PrefabInstance:
     - target: {fileID: 7645869810150024088, guid: db9d8e7191b3dfa4fa0fdb34a558234f, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 7645869810150024088, guid: db9d8e7191b3dfa4fa0fdb34a558234f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7645869810150024089, guid: db9d8e7191b3dfa4fa0fdb34a558234f, type: 3}
       propertyPath: m_RootOrder
@@ -1471,6 +1479,10 @@ PrefabInstance:
     - target: {fileID: 7806016470430035974, guid: b8dc0d0ff1b179941a29109c75381ade, type: 3}
       propertyPath: m_Name
       value: Camera - BG
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806016470430035974, guid: b8dc0d0ff1b179941a29109c75381ade, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8dc0d0ff1b179941a29109c75381ade, type: 3}
