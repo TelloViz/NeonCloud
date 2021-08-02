@@ -10,9 +10,19 @@ public class GameStateManager : MonoBehaviour
     private State inMenuState;
     private State playingState;
 
+    private void Awake()
+    {
+        stateMachine.OnStateChange += HandleStateChange;
+    }
+
+    private void OnDestroy()
+    {
+        stateMachine.OnStateChange -= HandleStateChange;
+    }
     // Start is called before the first frame update
     void Start()
     {
+        
         inMenuState = stateMachine.AddState(new GameState.InMainMenu());
 
         if (stateMachine.ContainsState(inMenuState))
@@ -30,5 +40,10 @@ public class GameStateManager : MonoBehaviour
     private void FixedUpdate()
     {
         stateMachine.FixedUpdateActiveState();
+    }
+
+    private void HandleStateChange(State newState)
+    {
+
     }
 }
