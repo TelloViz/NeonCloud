@@ -14,8 +14,6 @@ public class GameStateManager : MonoBehaviour
     void Start()
     {
         inMenuState = stateMachine.AddState(new GameState.InMainMenu());
-        playingState = stateMachine.AddState(new GameState.Playing());
-
 
         if (stateMachine.ContainsState(inMenuState))
         {
