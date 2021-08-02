@@ -24,6 +24,7 @@ public class GameStateManager : MonoBehaviour
     {
         
         inMenuState = stateMachine.AddState(new GameState.InMainMenu());
+        playingState = stateMachine.AddState(new GameState.Playing());
 
         if (stateMachine.ContainsState(inMenuState))
         {
@@ -44,6 +45,6 @@ public class GameStateManager : MonoBehaviour
 
     private void HandleStateChange(State newState)
     {
-
+        Debug.Log("You are subscribed mate!, the state is now " + newState.Name);
     }
 }
