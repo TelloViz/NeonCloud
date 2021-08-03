@@ -26,9 +26,10 @@ public class UIController : MonoBehaviour
 
     void StartButtonPressed()
     {
-        SceneManager.LoadScene("Main");
+        // TODO Transition to play state
     }
 
+    // TODO remove test button when no longer needed for testing
     void TestButtonPressed()
     {
         testText.style.display = DisplayStyle.Flex;
