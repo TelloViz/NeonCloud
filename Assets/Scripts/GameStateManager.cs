@@ -9,10 +9,8 @@ public class GameStateManager : MonoBehaviour
 
     [SerializeField] private StateMachine stateMachine;
     private State inMenuState;
-    private State playingState;
 
-    [SerializeField] private GameObject[] stateChangeSubscribers;
-
+    // Note to self: Awake called before Start(), even if script it disabled.
     private void Awake()
     {
         stateMachine.OnStateChange += HandleStateChange;
@@ -32,22 +30,12 @@ public class GameStateManager : MonoBehaviour
         
     }
 
-    //// Update is called once per frame
-    //void Update()
-    //{
-    //    stateMachine.UpdateActiveState();
-    //}
-
-    //private void FixedUpdate()
-    //{
-    //    stateMachine.FixedUpdateActiveState();
-    //}
-
     private void HandleStateChange(State newState)
     {
         Debug.Log(this.name + " says, the state is now " + newState.Name);
 
         // TODO: Handle state changes, deligate to individual state handling objects maybe
+        // TODO: Determine flow of control for this
 
     }
 }
