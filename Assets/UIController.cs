@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
@@ -18,11 +19,18 @@ public class UIController : MonoBehaviour
         startButton = root.Q<Button>("start-button");
         testButton = root.Q<Button>("test-button");
         testText = root.Q<Label>("test-text");
+
+        startButton.clicked += StartButtonPressed;
+        testButton.clicked += TestButtonPressed;
     }
 
-    // Update is called once per frame
-    void Update()
+    void StartButtonPressed()
     {
-        
+        SceneManager.LoadScene("Main");
+    }
+
+    void TestButtonPressed()
+    {
+        testText.style.display = DisplayStyle.Flex;
     }
 }
