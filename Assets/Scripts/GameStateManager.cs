@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Vast.StateMachine;
+using UnityEngine.Assertions;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -19,17 +20,14 @@ public class GameStateManager : MonoBehaviour
     {
         stateMachine.OnStateChange -= HandleStateChange;
     }
-    // Start is called before the first frame update
+   
     void Start()
     {
-        
+        // Set initial game state on Start()
         inMenuState = stateMachine.AddState(new GameState.InMainMenu());
-        playingState = stateMachine.AddState(new GameState.Playing());
-
-        if (stateMachine.ContainsState(inMenuState))
-        {
-            stateMachine.ChangeState(inMenuState);
-        }
+        Assert.IsTrue(stateMachine.ContainsState(inMenuState));
+        stateMachine.ChangeState(inMenuState);
+        
     }
 
     // Update is called once per frame
@@ -46,5 +44,8 @@ public class GameStateManager : MonoBehaviour
     private void HandleStateChange(State newState)
     {
         Debug.Log(this.name + " says, the state is now " + newState.Name);
+
+        // TODO: Handle state changes
+
     }
 }
