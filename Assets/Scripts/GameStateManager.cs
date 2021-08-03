@@ -11,6 +11,8 @@ public class GameStateManager : MonoBehaviour
     private State inMenuState;
     private State playingState;
 
+    [SerializeField] private GameObject[] stateChangeSubscribers;
+
     private void Awake()
     {
         stateMachine.OnStateChange += HandleStateChange;
@@ -30,16 +32,16 @@ public class GameStateManager : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        stateMachine.UpdateActiveState();
-    }
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    stateMachine.UpdateActiveState();
+    //}
 
-    private void FixedUpdate()
-    {
-        stateMachine.FixedUpdateActiveState();
-    }
+    //private void FixedUpdate()
+    //{
+    //    stateMachine.FixedUpdateActiveState();
+    //}
 
     private void HandleStateChange(State newState)
     {
