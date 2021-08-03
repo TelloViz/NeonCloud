@@ -1,20 +1,26 @@
-﻿using Vast.StateMachine;
+using Vast.StateMachine;
 using UnityEngine;
 using System.Collections;
 
 namespace GameState
 {
-    public class InMainMenu : State
+    public class Playing : State
     {
-        private const string DEFAULT_NAME = "InMainMenu";
+        private const string DEFAULT_NAME = "Playing";
 
-        public InMainMenu(string name = DEFAULT_NAME)
+        public Playing(string name = DEFAULT_NAME)
         {
             Name = name;
             UnityEngine.Debug.Log(name + " state created...");
         }
 
-        public override void OnEnter() { Debug.Log("Entered " + this.Name + " state..."); }
+        public override void OnEnter() 
+        { 
+            Debug.Log("Entered " + this.Name + " state..."); 
+
+
+
+        }
 
         public override void OnExit() { }
 

@@ -123,6 +123,11 @@ namespace Vast.StateMachine {
             ActiveState?.Update();
         }
 
+        /// <summary>Calls FixedUpdateState in the active State.</summary>
+        public void FixedUpdateActiveState() {
+            ActiveState?.FixedUpdate();
+        }
+
         /// <summary>Does the State Machine contain this State?</summary>
         /// <param name="state"></param>
         /// <returns>True or False</returns>
