@@ -45,7 +45,7 @@ public class GameStateManager : MonoBehaviour
     {
         Debug.Log(this.name + " says, the state is now " + newState.Name);
 
-        // TODO: Handle state changes
+        // TODO: Handle state changes, deligate to individual state handling objects maybe
 
     }
 }
