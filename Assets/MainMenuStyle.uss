@@ -1,0 +1,5 @@
+.button-style {
+    height: 46px;
+    width: 114px;
+    background-color: rgba(202, 150, 255, 255);
+}

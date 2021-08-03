@@ -52,6 +52,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: MenuUI
+    uniqueID: 3716300553
+    locked: 0
   - name: BackClouds
     uniqueID: 426671881
     locked: 0
