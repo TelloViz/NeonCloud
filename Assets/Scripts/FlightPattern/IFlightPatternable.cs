@@ -1,6 +1,6 @@
+using UnityEngine;
 
 
-internal interface IFlightPatternable{
-    // Interface for objects with a flight path pattern
-    void NextPosition();
+internal interface IFlightPatternable {
+    void IncrementRigidbody(Rigidbody rb, Vector3 startPos, float dt);
 }

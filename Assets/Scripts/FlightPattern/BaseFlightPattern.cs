@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace FlightPattern {
 
-
-public abstract class BaseFlightPattern : ScriptableObject
+    [RequireComponent(typeof(Rigidbody))]
+    public abstract class BaseFlightPattern : MonoBehaviour, IFlightPatternable
 {
         public abstract void IncrementRigidbody(Rigidbody rb, Vector3 startPos, float dt);
 }

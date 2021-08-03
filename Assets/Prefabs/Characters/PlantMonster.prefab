@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: -2678977257971223301}
   - component: {fileID: 7045151669632921413}
   - component: {fileID: -90697761742184212}
-  - component: {fileID: -3620276645736233876}
   - component: {fileID: -7780970018746316147}
+  - component: {fileID: 8744589328013569456}
+  - component: {fileID: 8414861785301668582}
   m_Layer: 10
   m_Name: PlantMonster
   m_TagString: Obstacle
@@ -136,20 +137,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-3620276645736233876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6356427340053251468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe070579ec24b274e9418d7190d3b1df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingPos: {x: 5, y: 0, z: 0}
-  flightPattern: {fileID: 11400000, guid: 00b7bd7488e79234ba4159e70c20849f, type: 2}
 --- !u!114 &-7780970018746316147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,3 +151,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetFromTarget: {fileID: 0}
   resetToTarget: {fileID: 0}
+--- !u!114 &8744589328013569456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6356427340053251468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe070579ec24b274e9418d7190d3b1df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPos: {x: 0, y: 0, z: 0}
+  fp: {fileID: 8414861785301668582}
+--- !u!114 &8414861785301668582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6356427340053251468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2615e51c0f41d62489d8c5f7e2e3d193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: -4933904554765710398}
+  fd: {fileID: 11400000, guid: adc19a94409b4984fbc6551495a7126e, type: 2}

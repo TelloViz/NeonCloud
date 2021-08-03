@@ -3,19 +3,15 @@ using System.Collections;
 
 namespace FlightPattern {
 
-    [CreateAssetMenu(fileName = "New Flight Pattern (PlantMonsterFlightPatternSwth)", menuName = "Flight Pattern/New Flight Pattern (PlantMonsterFlightPatternSwth)")]
-
-    public class SawtoothFlightPattern : PlantMonsterFlightPattern
+    public class SawtoothFlightPattern : BaseFlightPattern
     {
-        [SerializeField] private float xVelocity;
-        [SerializeField] private float magnitude;
-        [SerializeField] private float period;
+        [SerializeField] private FlightData fd;
 
-        public override void IncrementRigidbody(Rigidbody rb, Vector3 startPos, float dt) {
-
+        public override void IncrementRigidbody(Rigidbody rb, Vector3 startPos, float dt)
+        {
             Vector3 newPos;
-            newPos.x = rb.position.x + xVelocity * dt;
-            newPos.y = startPos.y + magnitude * 2 * ((rb.position.x / period) - Mathf.Floor(.5f + (rb.position.x / period)));
+            newPos.x = rb.position.x + fd.XVelocity * dt;
+            newPos.y = startPos.y + fd.Magnitude * 2 * ((rb.position.x / fd.Period) - Mathf.Floor(.5f + (rb.position.x / fd.Period)));
             newPos.z = rb.position.z;
             rb.position = newPos;
         }
