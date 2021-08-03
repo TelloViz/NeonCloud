@@ -45,6 +45,6 @@ public class GameStateManager : MonoBehaviour
 
     private void HandleStateChange(State newState)
     {
-        Debug.Log("You are subscribed mate!, the state is now " + newState.Name);
+        Debug.Log(this.name + " says, the state is now " + newState.Name);
     }
 }
