@@ -16,7 +16,7 @@ namespace GameState
 
         public override void OnEnter() { Debug.Log("Entered " + this.Name + " state..."); }
 
-        public override void OnExit() { }
+        public override void OnExit() { Debug.Log("Exited " + this.Name + " state..."); }
 
         public override void Update() { }
 
