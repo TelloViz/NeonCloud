@@ -9,9 +9,6 @@ public class GameStateMachine : MonoBehaviour
     // Serialized StateMachine allows for changing states in editor at run-time
     [SerializeField] private StateMachine stateMachine;
 
-    private InMainMenu inMainMenuState;
-    private Playing inPlayingState;
-
     // Note to self: Awake called before Start(), even if script it disabled.
     private void Awake()
     {
@@ -26,6 +23,7 @@ public class GameStateMachine : MonoBehaviour
     void Start()
     {
         stateMachine.OnStateChange += HandleStateChange;
+        stateMachine.AddState(new InMainMenu());
     }
 
     private void HandleStateChange(State newState)
