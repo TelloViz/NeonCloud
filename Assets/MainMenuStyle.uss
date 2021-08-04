@@ -1,5 +1,11 @@
 .button-style {
     height: 46px;
     width: 114px;
-    background-color: rgba(202, 150, 255, 255);
+    background-color: rgb(202, 150, 255);
+}
+
+.button-style:hover {
+    height: 46px;
+    width: 114px;
+    background-color: rgb(94, 21, 168);
 }

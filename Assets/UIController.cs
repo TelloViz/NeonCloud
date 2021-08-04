@@ -8,30 +8,29 @@ public class UIController : MonoBehaviour
 {
 
     public Button startButton;
-    public Button testButton;
-    public Label testText;
+    public Button exitButton;
 
     // Start is called before the first frame update
     void Start()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
 
-        startButton = root.Q<Button>("start-button");
-        testButton = root.Q<Button>("test-button");
-        testText = root.Q<Label>("test-text");
+        startButton = root.Q<Button>("button_start");
+        exitButton = root.Q<Button>("button_exit");
 
         startButton.clicked += StartButtonPressed;
-        testButton.clicked += TestButtonPressed;
+        exitButton.clicked += ExitButtonPressed;
     }
 
     void StartButtonPressed()
     {
         // TODO Transition to play state
+        Debug.Log("Main Menu Start Pressed");
     }
 
     // TODO remove test button when no longer needed for testing
-    void TestButtonPressed()
+    void ExitButtonPressed()
     {
-        testText.style.display = DisplayStyle.Flex;
+        Debug.Log("Main Menu Exit was pressed");
     }
 }
