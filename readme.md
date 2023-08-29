@@ -1,3 +1,12 @@
+
+This is a project I worked on in 2021. I am in the process of re-booting it. I'm currently getting re-familiarized with the codebase.
+
+The project at one point was moved to https://github.com/TelloViz/ServerSurfer
+
+Where I was taking it from prototype to full game. Over there, I had a working state system with UI. I'm currently figuring out where to start in my reboot attempt and will possibly start a new repository for a clean go.
+
+---
+
 # Neon Cloud
 
 ## Arcade runner where you soar through the skies.
