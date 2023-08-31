@@ -18,7 +18,7 @@ Where I was taking it from prototype to full game. Over there, I had a working s
 
 ## Arcade runner where you soar through the skies.
 
-#### Some demo footage from varous stages of development:
+#### Some demo footage from various stages of development:
 
 https://www.youtube.com/watch?v=2yQsls8u0wg
 
