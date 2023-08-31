@@ -5,6 +5,13 @@ The project at one point was moved to https://github.com/TelloViz/ServerSurfer
 
 Where I was taking it from prototype to full game. Over there, I had a working state system with UI. I'm currently figuring out where to start in my reboot attempt and will possibly start a new repository for a clean go.
 
+
+Additional:
+Currently have various branches with states of implementation. 
+Some have scenes representing menus and states of the game, some are just player character demos, while others are enemy demos.
+
+I want to unify these into a better presentable project. I will work on this goal in the time I can find between school and internship preparation (this is part of the prep though)
+
 ---
 
 # Neon Cloud
