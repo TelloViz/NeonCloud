@@ -10,7 +10,10 @@ Additional:
 Currently have various branches with states of implementation. 
 Some have scenes representing menus and states of the game, some are just player character demos, while others are enemy demos.
 
-I want to unify these into a better presentable project. I will work on this goal in the time I can find between school and internship preparation (this is part of the prep though)
+I want to unify these into a better presentable project. 
+
+**However, this is an old project and it's possibly more worthwile to embark on new projects that better showcase what I've learned since 2021...** 
+
 
 ---
 
