@@ -1,12 +1,4 @@
 
-This is a project I worked on in 2021. I am in the process of re-booting it. I'm currently getting re-familiarized with the codebase.
-
-The project at one point was moved to https://github.com/TelloViz/ServerSurfer
-
-Where I was taking it from prototype to full game. Over there, I had a working state system with UI. I'm currently figuring out where to start in my reboot attempt and will possibly start a new repository for a clean go.
-
-
-Additional:
 Currently have various branches with states of implementation. 
 Some have scenes representing menus and states of the game, some are just player character demos, while others are enemy demos.
 
@@ -14,6 +6,11 @@ I want to unify these into a better presentable project.
 
 **However, this is an old project and it's possibly more worthwile to embark on new projects that better showcase what I've learned since 2021...** 
 
+
+
+The project at one point was moved to https://github.com/TelloViz/ServerSurfer
+
+Where I was taking it from prototype to full game. Over there, I had a working state system with UI. I'm currently figuring out where to start in my reboot attempt and will possibly start a new repository for a clean go.
 
 ---
 
