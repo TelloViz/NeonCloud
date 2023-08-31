@@ -6,7 +6,7 @@ I want to unify these into a better presentable project.
 
 **However, this is an old project and it's possibly more worthwile to embark on new projects that better showcase what I've learned since 2021...** 
 
-
+---
 
 The project at one point was moved to https://github.com/TelloViz/ServerSurfer
 
@@ -18,6 +18,16 @@ Where I was taking it from prototype to full game. Over there, I had a working s
 
 ## Arcade runner where you soar through the skies.
 
+#### Some demo footage from varous stages of development:
+
+https://www.youtube.com/watch?v=2yQsls8u0wg
+https://www.youtube.com/watch?v=kCTCbXfQMr0
+https://www.youtube.com/watch?v=ghEL2NIQV_0
+https://www.youtube.com/watch?v=c8jDT2u8Ty0
+https://www.youtube.com/watch?v=3BDFBor0CzU
+
+
+---
 
 # Legal Notice:
 >Some assets used in the development phase of this game is under copyright by other owners. 
