@@ -21,10 +21,15 @@ Where I was taking it from prototype to full game. Over there, I had a working s
 #### Some demo footage from varous stages of development:
 
 https://www.youtube.com/watch?v=2yQsls8u0wg
+
 https://www.youtube.com/watch?v=kCTCbXfQMr0
+
 https://www.youtube.com/watch?v=ghEL2NIQV_0
+
 https://www.youtube.com/watch?v=c8jDT2u8Ty0
+
 https://www.youtube.com/watch?v=3BDFBor0CzU
+
 
 
 ---
